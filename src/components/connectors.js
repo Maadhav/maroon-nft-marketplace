@@ -6,11 +6,11 @@ export const injected = {}
 export const walletconnect = {provider: 'walletconnect'}
 
 UAuthMoralisConnector.setUAuthOptions({
-  clientID: process.env.REACT_APP_CLIENT_ID,
+  clientID: 'uauth_example_spa_id',
   // clientSecret: process.env.REACT_APP_CLIENT_SECRET!,
-  redirectUri: process.env.REACT_APP_REDIRECT_URI,
+  redirectUri: 'http://localhost:3000/callback',
   // postLogoutRedirectUri: process.env.REACT_APP_POST_LOGOUT_REDIRECT_URI!,
-  fallbackIssuer: process.env.REACT_APP_FALLBACK_ISSUER,
+  fallbackIssuer: 'http://localhost:3000',
 
   // Scope must include openid and wallet
   scope: 'openid wallet',
