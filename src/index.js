@@ -12,8 +12,7 @@ const APP_ID = process.env.REACT_APP_MORALIS_APPLICATION_ID;
 const SERVER_URL = process.env.REACT_APP_MORALIS_SERVER_URL;
 
 const Application = () => {
-  const isServerInfo = APP_ID && SERVER_URL ? true : false;
-  if (isServerInfo)
+
     return (
       <MoralisProvider appId={'eg2f26QLiM1VzvoGPTrO1uNMqGeRhM2jh0LDtXae'} serverUrl={'https://mamxi0s9jcvm.usemoralis.com:2053/server'}>
         <MoralisDappProvider>
@@ -21,13 +20,6 @@ const Application = () => {
         </MoralisDappProvider>
       </MoralisProvider>
     );
-  else {
-    return (
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <QuickStart />
-      </div>
-    );
-  }
 };
 
 ReactDOM.render(
