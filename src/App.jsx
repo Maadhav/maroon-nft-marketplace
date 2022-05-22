@@ -115,7 +115,7 @@ const App = ({ isServerInfo }) => {
       </Router>
       <Footer style={{ textAlign: "center" }}>
         <Text style={{ display: "block" }}>
-          ⭐️ Deceloped By{" "}
+          ⭐️ Developed By{" "}
           <a
             href="https://github.com/Maadhav"
             target="_blank"

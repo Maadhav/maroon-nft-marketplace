@@ -6,7 +6,7 @@ import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/tok
 import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol";
 
 contract marketPlaceBoilerPlate is ReentrancyGuard {
-    using Counters for Counters.Counter;
+using Counters for Counters.Counter;
     Counters.Counter private _itemIds;
     Counters.Counter private _itemsSold;
     
